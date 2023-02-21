@@ -4,18 +4,18 @@
 
 ```
 git clone https://github.com/podpolkovnik/ht_client_server.git
-cd server
+cd ht_client_server/server/
 make
 ```
 ## Usage
 ### To start the server
 ```
-cd server
+cd ht_client_server/server/
 ./htserver
 ```
 ### To start the client
 ```
-cd client
+cd ht_client_server/client/
 python3 main.py 
 ```
 ### Examples
