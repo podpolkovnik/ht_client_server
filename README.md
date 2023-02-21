@@ -20,7 +20,7 @@ python3 main.py
 ```
 ### Examples
 Insert, update, delete and read a key-value pair into/from Remote Hash Table
-#### 1. Using python Remote Hash Table API create the python project: 
+#### 1. Using python Remote Hash Table API create the python project 
 ``` Python
 # main.py
 from api import RemoteHashTable
@@ -58,7 +58,9 @@ if __name__ == '__main__':
 python3 main.py
 ```
 ## Description
-At the moment, the server can only process ```read```, ```insert```, ```update``` and ```delete``` commands
+> **Note**
+> At the moment, the server can only process ```read```, ```insert```, ```update``` and ```delete``` commands
+
 ### Client-Server diagram
 ![alt text](https://github.com/podpolkovnik/ht_client_server/blob/main/blob/client_server_diagram.png?raw=true)
 ### TCP Packet structure
