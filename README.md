@@ -57,3 +57,27 @@ if __name__ == '__main__':
 ```
 python3 main.py
 ```
+## Description
+At the moment, the server can only process ```read```, ```insert```, ```update``` and ```delete``` commands
+### Client-Server diagram
+![alt text](https://github.com/podpolkovnik/ht_client_server/blob/main/blob/client_server_diagram.png?raw=true)
+### TCP Packet structure
+> **Note**
+> In this scheme, the TCP Packet size is 256 bytes, but you can change the size in the code (flie ```server/include/tcpserver.h```)
+> ``` C
+> // ...
+> #define TCP_PACKET_SIZE                     256
+> #define TCP_PACKET_HEADER_TYPE              int
+> #define TCP_PACKET_STATUS_TYPE              char
+> #define TCP_PACKET_DATA_SIZE_TYPE           int
+> #define TCP_PACKET_DATA_TYPE                char
+> // ...
+> ```
+
+![alt text](https://github.com/podpolkovnik/ht_client_server/blob/main/blob/tcp_hcsp_packets_diagram.png?raw=true)
+
+## TODO
+1. Implement multi-packet data transfer if they do not fit into one TCP Packet
+2. Choose the optimal hash function and other parameters for the Hash Table to increase performance
+3. Optimize the code
+4. Write documentation
